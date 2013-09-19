@@ -35,13 +35,11 @@ describe Grid do
 
     it 'column' do
       col_neighbours = grid.get_column_neighbours_for(grid.cells[75])
-       # puts col_neighbours.inspect
       expect(col_neighbours.size).to eql 8
     end
 
     it 'box' do
       box_neighbours = grid.get_box_neighbours(grid.cells[75])
-      # puts box_neighbours.inspect
       expect(box_neighbours.size).to eql 8
     end
 
