@@ -7,6 +7,7 @@ enable :sessions
 use Rack::Flash
 
 set :partial_template_engine, :erb
+set :session_secret, "I'm the secret key to sign the cookie"
 
 def random_sudoku
   seed = '015003002000100906270068430490002017501040380003905000900081040860070025037204600'
